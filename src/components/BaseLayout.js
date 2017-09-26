@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
         <div>
         <Navbar color="faded" light toggleable>
           <NavbarToggler right />
-          <NavLink exact to="/" style={{padding:'15px'}}>PollyBlog</NavLink>
+          <NavLink exact to="/" style={{padding:'15px', fontFamily:'cursive', fontSize:'30px'}}>PollyBlog</NavLink>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>

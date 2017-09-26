@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import PostList from './PostList';
 
 export default class CreatePost extends React.Component {
   constructor(props){
@@ -15,8 +14,8 @@ export default class CreatePost extends React.Component {
 addtolist = (e) => {
   e.preventDefault();
   let listItem = JSON.stringify(this.state);
-  const { id } = this.props.match.params;
-  const URL = `https://tiny-lasagna-server.herokuapp.com/collections/blogger/${id}`;
+
+  const URL = `https://tiny-lasagna-server.herokuapp.com/collections/blogger/`;
   console.log(URL);
 
       fetch(URL, {
@@ -57,7 +56,6 @@ addtolist = (e) => {
            </FormGroup>
            <Button color="primary" onClick={this.addtolist}>Submit</Button>
        </Form>
-       <PostList blog={this.state.blogTitle} />
       </div>
     );
   }
