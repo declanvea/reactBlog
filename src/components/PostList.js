@@ -19,7 +19,6 @@ export default class PostList extends React.Component {
       return(
         <div className="col-lg-8 col-lg-offset-2 card">
             <div className="profile">
-              <i className="fa fa-film" aria-hidden="true"></i>
               {this.state.results.map(blog => (
                 <div key={blog._id}>
                     <Link to={`/ShowPost/${blog._id}`}>{blog.blogTitle}</Link>

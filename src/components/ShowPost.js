@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 export default class ShowPost extends React.Component {
-  state ={
+  state = {
     results: ''
   }
 
